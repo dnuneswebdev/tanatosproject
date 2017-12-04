@@ -1,0 +1,55 @@
+.services {
+    padding: 8rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    
+    &__item {
+        flex-basis: 15%;
+        position: relative;
+        transition: all 0.3s;
+       
+    }
+
+    &__icon {
+        width: 11rem;
+        height: 11rem;
+        fill: $mainOrange;
+        border: 1px solid $greyLight2;
+        border-radius: 50%;
+        padding: 3.2rem 0;
+        margin: 0 auto;
+        display: flex;
+        transition: all .5s;
+        backface-visibility: hidden;
+
+        &:hover {
+            border: 2px dotted $mainOrange;
+            backface-visibility: hidden;
+            transform: translateY(-2px);
+            transform: rotate(360deg);
+        }
+     
+        
+    }
+
+    &__item-title {
+        text-align: center;
+        text-transform: uppercase;
+        color: $mainGrey;
+        font-size: 1.4rem;
+        margin: 2rem 0;
+        
+    }
+
+    &__item-text {
+        text-align: center;
+        color: $greyLight;
+        font-size: 1.3rem;
+        line-height: 2rem;
+        
+    }
+
+ 
+}

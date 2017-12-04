@@ -1,0 +1,115 @@
+.btn {
+    text-decoration: none;
+    
+    color: #FFF;
+    border: 1px solid $greyLight;
+    text-transform: uppercase;
+    font-size: 1.4rem;
+    padding: 1rem 5rem;
+    border-radius: .7rem;
+    transition: all .2s;
+    display: inline-block;
+    width: auto;
+    
+
+    &--lh {
+        margin-top: 4rem;
+        
+        &:not(:last-child) {
+            margin-right: 2rem;
+        }
+
+        &:hover {
+            background-color: $mainOrange;
+            transform: translateY(-3px);
+            box-shadow: 0 1rem 2rem rgba(0,0,0,0.2);
+            border: 1px solid $mainOrange;
+            backface-visibility: hidden;
+        }
+    
+        &:active {
+            outline: none;
+            transform: translateY(-1px);
+            box-shadow: 0 .5rem 1rem rgba(0,0,0,0.2);
+        }
+    }
+
+    &--news {
+        background-color: $mainOrange;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        transition: all .3s;
+
+        &:hover {
+            background-color: #ff7327;
+        }
+        
+    }
+
+    &--works {
+        font-size: 1.2rem;
+        outline: none;
+        cursor: pointer;
+        text-align: center;
+        background-color: #FFF;
+        color: $mainGrey;
+        border: 1px solid $greyLight2;
+        transition: all .4s;
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%);
+        margin-top: 4rem;
+        
+        &:hover {
+            background-color: $mainOrange;
+            border: 1px solid $mainOrange;
+            
+            color: #FFF;
+        }
+    }
+
+    &--contact {
+        background-color: $mainOrange;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        margin-left: 5rem;
+
+        transition: all .3s;
+
+        &:hover {
+            background-color: #ff7327;
+        }
+        
+    }
+
+    &--img {
+        background-color: #FFF;
+        color: $mainOrange;
+        outline: none;
+        border: none;
+        visibility: hidden;
+        
+        transform: translateY(20px);
+        transition: all 0.2s 0.7s;
+        opacity: 0;
+    }
+
+    &--form-modal {
+        background-color: $mainOrange;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        width: 100%;
+        display: block;
+        transition: all .3s;
+
+        &:hover {
+            background-color: #ff7327;
+        }
+        
+    }
+
+}
+

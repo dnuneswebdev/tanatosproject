@@ -1,0 +1,38 @@
+.large-hero {
+    position: relative;
+
+    &__image {
+        display: block;
+        
+    }
+
+    &__box {
+        max-width: 60rem;
+        text-align: center;
+        position: absolute;
+        top: 45%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        display: inline-block;
+    }
+
+    &__title {
+        font-size: 5rem;
+        color: #Fff;
+        text-transform: uppercase;
+        font-weight: 900;
+        margin-bottom: 1rem;
+        
+    }
+
+    &__subtitle {
+        font-size: 2rem;
+        line-height: 3.5rem;
+        color: #FFF;
+        
+    }
+
+    span {
+        color: $mainOrange;
+    }
+}

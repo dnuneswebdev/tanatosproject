@@ -1,0 +1,21 @@
+.footer {
+    background-color: $mainGrey;
+    padding: 4rem 0;
+    color: #FFF;
+    text-transform: uppercase;
+    
+
+    &__copy {
+        float: left;
+        font-weight: 400;
+    }
+
+    &__designed {
+        float: right;
+        font-weight: 400;
+    }
+
+    span {
+        color: $mainOrange;
+    }
+}

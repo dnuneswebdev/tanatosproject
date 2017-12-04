@@ -4,9 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800" rel="stylesheet">
-    <link rel="stylesheet" href="">
-
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,500,700,800" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    
+    <link rel="stylesheet" href="./temp/styles/styles.css">
 
 
     <title>Tanatos Studio</title>
@@ -15,13 +16,349 @@
 </head>
 <body>
 
+<!-- NAVBAR HEADER -->
 
+<section class="site-header" id="site-header">
+<div class="container">
+  <div class="site-header__logo">
+      <img src="./assets/images/logo.png">
+  </div>
 
+  <div class="site-header__menu-text">
+    <p>MENU</p>
+  </div>    
 
+  <div class="site-header__menu-icon">
+      <div class="site-header__menu-icon__top"></div>
+      <div class="site-header__menu-icon__middle"></div>
+      <div class="site-header__menu-icon__bottom"></div>
+    </div>
 
+</div>
+</section>
 
+<!-- LARGE HERO -->
 
+<section class="large-hero" id="large-hero">
 
+  <picture>
+    <img class="large-hero__image" src="./assets/images/large-hero-image.jpg" alt="Hero image">
+  </picture>
   
+  <div class="container">
+    <div class="large-hero__box">
+      <h1 class="large-hero__title">We design <span>things</span></h1>
+      <p class="large-hero__subtitle">Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+       sed odit eaque iste molestiae aliquid maxime? amet consectetur.</p>
+       <a href="#" class="btn btn--lh">Hire us</a>
+       <a href="#" class="btn btn--lh">Our works</a>
+    </div>
+  </div>
+
+
+</section>
+  
+<!-- SERVICES -->
+
+<section id="services">
+  <div class="container container--flex">
+  
+  <div class="services">
+    <div class="services__item">
+      <svg class="services__icon">
+        <use xlink:href="./assets/images/sprite.svg#icon-printer"></use>
+      </svg>
+      <h2 class="services__item-title">Print design</h2>
+      <p class="services__item-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+    </div>
+
+    <div class="services__item">
+      <svg class="services__icon">
+        <use xlink:href="./assets/images/sprite.svg#icon-display"></use>
+      </svg>
+      <h2 class="services__item-title">web design</h2>
+      <p class="services__item-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+    </div>
+
+    <div class="services__item">
+      <svg class="services__icon">
+        <use xlink:href="./assets/images/sprite.svg#icon-mobile"></use>
+      </svg>
+      <h2 class="services__item-title">app design</h2>
+      <p class="services__item-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+    </div>
+
+    <div class="services__item">
+      <svg class="services__icon">
+        <use xlink:href="./assets/images/sprite.svg#icon-pencil2"></use>
+      </svg>
+      <h2 class="services__item-title">logo design</h2>
+      <p class="services__item-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+    </div>
+
+  </div>
+  </div>
+</section>
+
+<!-- NEWSLETTER -->
+
+<section id="newsletter">
+    <!-- <img src="/assets/images/newsletter-image-large.jpg" alt=""> -->
+    <div class="newsletter">
+      <div class="newsletter__box">
+        <form action="#">
+        <input type="email" class="newsletter__input" placeholder="Enter your email for newsletter">
+        <button class="btn btn--news">SUBscribe</button>
+      </form>
+      </div>
+      </div>
+</section>
+
+<!-- WORKS -->
+<section  class="section-works" id="works">
+  <div class="container">
+    <div class="heading">
+      <h2 class="heading__title">our <span>works</span></h2>
+      <p class="heading__text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+         In, ex! lorem ipsum dolor sit</p>
+    </div>
+
+<div class="works">
+      <div class="works__flex-container">
+      <span>
+        <div class="works__item-box">
+        <h2 class="works__img-title">abazoo website</h2>
+        <p class="works__img-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+        <a href="#" class="btn btn--img">show project</a>
+        </div>
+      </span>
+      <img src="./assets/images/work-1.jpg" alt="work 1" class="works__image">
+      </div>
+
+      <div class="works__flex-container">
+        <span>
+        <div class="works__item-box">
+        <h2 class="works__img-title">abazoo website</h2>
+        <p class="works__img-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+        <a href="#" class="btn btn--img">show project</a>
+        </div>
+      </span>
+      <img src="./assets/images/work-2.jpg" alt="work 2" class="works__image">
+      </div>
+      
+      <div class="works__flex-container">
+        <span>
+        <div class="works__item-box">
+        <h2 class="works__img-title">abazoo website</h2>
+        <p class="works__img-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+        <a href="#" class="btn btn--img">show project</a>
+        </div>
+      </span>
+      <img src="./assets/images/work-3.jpg" alt="work 3" class="works__image">
+      </div>
+</div>
+
+<div class="works">
+      <div class="works__flex-container">
+        <span>
+        <div class="works__item-box">
+        <h2 class="works__img-title">abazoo website</h2>
+        <p class="works__img-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+        <a href="#" class="btn btn--img">show project</a>
+        </div>
+      </span>
+      <img src="./assets/images/work-3.jpg" alt="work 1" class="works__image">
+      </div>
+
+      <div class="works__flex-container">
+        <span>
+        <div class="works__item-box">
+        <h2 class="works__img-title">abazoo website</h2>
+        <p class="works__img-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+        <a href="#" class="btn btn--img">show project</a>
+        </div>
+      </span>
+      <img src="./assets/images/work-2.jpg" alt="work 2" class="works__image">
+      </div>
+
+      <div class="works__flex-container">
+        <span>
+        <div class="works__item-box">
+        <h2 class="works__img-title">abazoo website</h2>
+        <p class="works__img-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+        <a href="#" class="btn btn--img">show project</a>
+        </div>
+      </span>
+      <img src="./assets/images/work-1.jpg" alt="work 3" class="works__image">
+      </div>
+      
+      </div>
+      <button class="btn btn--works">Show more</button>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+
+<section id="testimonials">
+  <div class="testimonials">
+    <div class="container">
+      <div class="testimonials-box">
+        <img src="./assets/images/team-4.jpg" alt="test 1" class="testimonials__photo">
+        <p class="testimonials__text">"These Guys are incredible! I get my project
+          in 10 days and it was awesome! Very good services! Highly recommended!"
+        </p>
+        <p class="testimonials__name">John Smith</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- OUR TEAM -->
+
+<section class="section-our-team" id="our-team">
+  <div class="container">
+    <div class="heading">
+      <h2 class="heading__title">our <span>team</span></h2>
+      <p class="heading__text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+         In, ex! lorem ipsum dolor sit</p>
+    </div>
+  
+
+  <div class="our-team">
+    <div class="our-team__flex-container">
+      <img src="./assets/images/team-1.jpg" alt="team 1" class="our-team__photo">
+      <h2 class="our-team__name">catherina gail</h2>
+      <i class="our-team__icon fa fa-facebook-square fa-lg"></i>
+      <i class="our-team__icon fa fa-twitter-square fa-lg"></i>
+      <i class="our-team__icon fa fa-google-plus-square fa-lg"></i>
+      <p class="our-team__text">Lorem ipsum dolor sit amet consectetur, 
+        adipisicing elit. Ad, necessitatibus!</p>
+    </div>
+
+    <div class="our-team__flex-container">
+      <img src="./assets/images/team-2.jpg" alt="team 2" class="our-team__photo">
+      <h2 class="our-team__name">harvey rube</h2>
+      <i class="our-team__icon fa fa-facebook-square fa-lg"></i>
+      <i class="our-team__icon fa fa-twitter-square fa-lg"></i>
+      <i class="our-team__icon fa fa-google-plus-square fa-lg"></i>
+      <p class="our-team__text">Lorem ipsum dolor sit amet consectetur, 
+        adipisicing elit. Ad, necessitatibus!</p>
+    </div>
+
+    <div class="our-team__flex-container">
+      <img src="./assets/images/team-3.jpg" alt="team 3" class="our-team__photo">
+      <h2 class="our-team__name">janet pris</h2>
+      <i class="our-team__icon fa fa-facebook-square fa-lg"></i>
+      <i class="our-team__icon fa fa-twitter-square fa-lg"></i>
+      <i class="our-team__icon fa fa-google-plus-square fa-lg"></i>
+      <p class="our-team__text">Lorem ipsum dolor sit amet consectetur, 
+        adipisicing elit. Ad, necessitatibus!</p>
+    </div>
+
+    <div class="our-team__flex-container">
+      <img src="./assets/images/team-4.jpg" alt="team 4" class="our-team__photo">
+      <h2 class="our-team__name">kevin ward</h2>
+      <i class="our-team__icon fa fa-facebook-square fa-lg"></i>
+      <i class="our-team__icon fa fa-twitter-square fa-lg"></i>
+      <i class="our-team__icon fa fa-google-plus-square fa-lg"></i>
+      <p class="our-team__text">Lorem ipsum dolor sit amet consectetur, 
+        adipisicing elit. Ad, necessitatibus!</p>
+    </div>
+  </div>
+
+  </div>
+</section>
+
+<!-- CONTACT -->
+
+<section id="contact">
+  <div class="contact">
+    <img src="./assets/images/contact-large-image.jpg" 
+    alt="contact image" class="contact__image">
+  <div class="container">
+    
+    <div class="contact__box">
+    <div class="heading">
+      <h2 class="heading__title heading__title--white">say <span>hello</span></h2>
+      <p class="heading__text heading__text--white">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+         In, ex! lorem ipsum dolor sit</p>
+    </div>
+
+    <form action="#">
+      <input type="email" class="contact__input" placeholder="Your Email">
+      <input type="text" class="contact__input" placeholder="Subject">
+      <textarea name="textarea" cols="30" rows="8" class="contact__textarea" 
+      placeholder="Your Message"></textarea>
+    </form>
+    <button class="btn btn--contact">hire us</button>
+    <a href="#"><i class="contact__icon fa fa-facebook-square"></i></a>
+    <a href="#"><i class="contact__icon fa fa-twitter-square"></i></a>
+    <a href="#"><i class="contact__icon fa fa-google-plus-square"></i></a>
+    <a href="#"><i class="contact__icon fa fa-dribbble"></i></a>
+    <a href="#"><i class="contact__icon fa fa-behance-square"></i></a>
+
+    </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+
+<footer class="footer" id="footer">
+<div class="container">
+  <h2 class="footer__copy">&copy; 2017 copyright design <span>studio</span></h2>
+  <h2 class="footer__designed">designed by <span>dnuneswebdev</span>.com</h2>
+</div>
+</footer>
+
+<!-- MENU  -->
+
+<div class="menu" id="menu">
+  <h2 class="menu__close">X</h2>
+
+  <div class="menu__box">
+  <ul class="menu__list">
+    <li class="menu__item"><a href="#" class="menu__link">home</a></li>
+    <li class="menu__item"><a href="#" class="menu__link">about us</a></li>
+    <li class="menu__item"><a href="#" class="menu__link">services</a></li>
+    <li class="menu__item"><a href="#" class="menu__link">our works</a></li>
+    <li class="menu__item"><a href="#" class="menu__link">contact</a></li>
+  </ul>
+  <a href="#"><i class="menu__icon fa fa-facebook-square"></i></a>
+  <a href="#"><i class="menu__icon fa fa-twitter-square"></i></a>
+  <a href="#"><i class="menu__icon fa fa-google-plus-square"></i></a>
+  <a href="#"><i class="menu__icon fa fa-dribbble"></i></a>
+  <a href="#"><i class="menu__icon fa fa-behance-square"></i></a>
+  </div>
+
+</div>
+
+<!-- FORM MODAL -->
+
+<div class="form-modal" id="form-modal">
+  <div class="form-modal__box">
+    <h2 class="form-modal__close">X</h2>
+    <div class="container container--less-padding">
+    <div class="heading heading--lpb">
+      <h2 class="heading__title heading__title">hire <span>us</span></h2>
+      <p class="heading__text heading__text">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+         In, ex! lorem ipsum dolor sit</p>
+    
+    </div>
+    <form action="#">
+      <input type="email" class="form-modal__input" placeholder="Your Email">
+      <input type="text" class="form-modal__input" placeholder="Subject">
+      <textarea name="textarea" cols="30" rows="8" class="form-modal__textarea" 
+      placeholder="Your Message"></textarea>
+    </form>
+    <button class="btn btn--form-modal">send message</button>
+    
+  </div>
+  </div>
+  
+
+</div>
 </body>
 </html>

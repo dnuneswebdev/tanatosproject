@@ -1,0 +1,33 @@
+.testimonials {
+    padding: 6.3rem 0;
+    position: relative;
+    background-image: url('/assets/images/testimonials-large-image.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    color: #FFF;
+
+    &__box {
+        @mixin centerAll
+    }
+
+    &__photo {
+        width: 12rem;
+        height: 12rem;
+        border-radius: 50%;
+    }
+
+    &__text {
+        font-size: 2rem;
+        font-style: italic;
+        line-height: 3rem;
+        margin-top: 2rem;
+    }
+
+    &__name {
+        font-size: 1.6rem;
+        margin-top: 5rem;
+    }
+}

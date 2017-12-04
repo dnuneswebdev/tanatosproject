@@ -1,0 +1,58 @@
+.contact {
+    position: relative;
+    width: 100%;
+
+    
+    &__box {
+        @mixin centerAll;
+    }
+
+    &__image {
+        display: block;
+
+    }
+
+    &__input {
+        padding: 1rem 1rem;
+        border-radius: .7rem;
+        outline: none;
+        border: none;
+        font-size: 1.6rem;
+        width: 40%;
+        display: inline;
+        margin-bottom: 2rem;
+        color: $greyLight;
+
+        &:not(:Last-child) {
+            margin-left: 5rem;
+        }
+
+    }
+
+    &__textarea {
+        padding: 1rem 1rem;
+        border-radius: .7rem;
+        margin-left: 5rem;
+        outline: none;
+        border: none;
+        font-size: 1.6rem;
+        width: 87%;
+        margin-bottom: 2rem;
+        color: $greyLight;
+    }
+
+    &__icon {
+        letter-spacing: 1rem;
+        font-size: 3.5rem;
+        transition: all .2s;
+        float: right;
+        
+        &:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 1rem 2rem rgba(0,0,0,0.2);
+        }
+       
+    }
+
+}
+
