@@ -8,15 +8,18 @@
     height: 100%;
     text-align: center;
     color: #FFF;
+    
 
     &__box {
         @mixin centerAll
+        
     }
 
     &__photo {
         width: 12rem;
         height: 12rem;
         border-radius: 50%;
+        margin: 0 auto;
     }
 
     &__text {

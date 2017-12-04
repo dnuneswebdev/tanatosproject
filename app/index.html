@@ -6,8 +6,15 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,500,700,800" rel="stylesheet">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-    
+    <link href="./slick-1.8.0/slick/slick.css" type="text/css" rel="stylesheet">
+    <link href="./slick-1.8.0/slick/slick-theme.css" type="text/css" rel="stylesheet">
+
+
     <link rel="stylesheet" href="./temp/styles/styles.css">
+
+
+
+    <script src="/temp/scripts/Vendor.js"></script>
 
 
     <title>Tanatos Studio</title>
@@ -21,7 +28,7 @@
 <section class="site-header" id="site-header">
 <div class="container">
   <div class="site-header__logo">
-      <img src="./assets/images/logo.png">
+      <a href ="#"><img src="./assets/images/logo.png"></a>
   </div>
 
   <div class="site-header__menu-text">
@@ -42,7 +49,7 @@
 <section class="large-hero" id="large-hero">
 
   <picture>
-    <img class="large-hero__image" src="./assets/images/large-hero-image.jpg" alt="Hero image">
+      <img class="large-hero__image" src="./assets/images/large-hero-image.jpg" alt="Hero image">
   </picture>
   
   <div class="container">
@@ -50,7 +57,7 @@
       <h1 class="large-hero__title">We design <span>things</span></h1>
       <p class="large-hero__subtitle">Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
        sed odit eaque iste molestiae aliquid maxime? amet consectetur.</p>
-       <a href="#" class="btn btn--lh">Hire us</a>
+       <a href="#" class="btn btn--lh open-modal">Hire us</a>
        <a href="#" class="btn btn--lh">Our works</a>
     </div>
   </div>
@@ -202,12 +209,30 @@
 <section id="testimonials">
   <div class="testimonials">
     <div class="container">
+
       <div class="testimonials-box">
+      <div class="carousel">
+
+      <div>
         <img src="./assets/images/team-4.jpg" alt="test 1" class="testimonials__photo">
         <p class="testimonials__text">"These Guys are incredible! I get my project
           in 10 days and it was awesome! Very good services! Highly recommended!"
         </p>
         <p class="testimonials__name">John Smith</p>
+      </div>
+
+      <div>
+          <img src="./assets/images/team-3.jpg" alt="test 1" class="testimonials__photo">
+          <p class="testimonials__text">"These Guys are incredible! I get my project
+            in 10 days and it was awesome! Very good services! Highly recommended!"
+          </p>
+          <p class="testimonials__name">Janet Priz</p>
+      </div>
+
+      </div>
+      </div>
+      </div>
+
       </div>
     </div>
   </div>
@@ -292,11 +317,13 @@
       placeholder="Your Message"></textarea>
     </form>
     <button class="btn btn--contact">hire us</button>
-    <a href="#"><i class="contact__icon fa fa-facebook-square"></i></a>
-    <a href="#"><i class="contact__icon fa fa-twitter-square"></i></a>
-    <a href="#"><i class="contact__icon fa fa-google-plus-square"></i></a>
-    <a href="#"><i class="contact__icon fa fa-dribbble"></i></a>
-    <a href="#"><i class="contact__icon fa fa-behance-square"></i></a>
+    <ul class="contact__icon-list">
+    <li class="contact__icon-item"><a href="#"><i class="contact__icon fa fa-facebook-square"></i></a></li>
+    <li class="contact__icon-item"><a href="#"><i class="contact__icon fa fa-twitter-square"></i></a></li>
+    <li class="contact__icon-item"><a href="#"><i class="contact__icon fa fa-google-plus-square"></i></a></li>
+    <li class="contact__icon-item"><a href="#"><i class="contact__icon fa fa-dribbble"></i></a></li>
+    <li class="contact__icon-item"><a href="#"><i class="contact__icon fa fa-behance-square"></i></a></li>
+    </ul>
 
     </div>
     </div>
@@ -320,10 +347,10 @@
   <div class="menu__box">
   <ul class="menu__list">
     <li class="menu__item"><a href="#" class="menu__link">home</a></li>
-    <li class="menu__item"><a href="#" class="menu__link">about us</a></li>
-    <li class="menu__item"><a href="#" class="menu__link">services</a></li>
-    <li class="menu__item"><a href="#" class="menu__link">our works</a></li>
-    <li class="menu__item"><a href="#" class="menu__link">contact</a></li>
+    <li class="menu__item"><a href="#our-team" class="menu__link">about us</a></li>
+    <li class="menu__item"><a href="#services" class="menu__link">services</a></li>
+    <li class="menu__item"><a href="#works" class="menu__link">our works</a></li>
+    <li class="menu__item"><a href="#contact" class="menu__link">contact</a></li>
   </ul>
   <a href="#"><i class="menu__icon fa fa-facebook-square"></i></a>
   <a href="#"><i class="menu__icon fa fa-twitter-square"></i></a>
@@ -348,7 +375,7 @@
     
     </div>
     <form action="#">
-      <input type="email" class="form-modal__input" placeholder="Your Email">
+      <input type="email" class="form-modal__input" placeholder="Your Email" required>
       <input type="text" class="form-modal__input" placeholder="Subject">
       <textarea name="textarea" cols="30" rows="8" class="form-modal__textarea" 
       placeholder="Your Message"></textarea>
@@ -358,7 +385,16 @@
   </div>
   </div>
   
-
 </div>
+
+
+<script src="./temp/scripts/app.js"></script>
+
+
+<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+<script src="./slick-1.8.0/slick/slick.min.js"></script>
+<script src="./assets/scripts/modules/Carousel.js"></script>
+
+
 </body>
 </html>

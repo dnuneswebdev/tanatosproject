@@ -41,11 +41,22 @@
         color: $greyLight;
     }
 
+    &__icon-list {
+        float: right;
+        list-style: none;
+        margin-right: 3.5rem;
+        
+    }
+
+    &__icon-item {
+        display: inline;
+    }
+
     &__icon {
-        letter-spacing: 1rem;
+        margin-right: 1.7rem;
         font-size: 3.5rem;
         transition: all .2s;
-        float: right;
+        
         
         &:hover {
             transform: translateY(-2px);
@@ -54,5 +65,11 @@
        
     }
 
+    a {
+        text-decoration: none;
+        display: inline;
+    }
+
 }
+
 
