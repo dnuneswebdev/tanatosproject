@@ -2,7 +2,7 @@
     position: relative;
     padding: 8rem 0;
 
-    background-image: none;
+    
     background-color: $mainGrey;
 
     @mixin atSmall2 {
