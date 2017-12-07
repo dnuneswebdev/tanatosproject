@@ -1,19 +1,28 @@
 .heading {
     text-align: center;
     margin: 0 auto;
-    padding-bottom: 8rem;
-    position: relative;
+    padding-bottom: 4rem;
+    
+
+    @mixin atSmall {
+        padding-bottom: 8rem;
+    }
     
     &--lpb {
         padding-bottom: 4rem;
     }
+
     
     &__title {
         text-transform: uppercase;
         color: $mainGrey;
-        font-size: 3rem;
+        font-size: 2rem;
         font-weight: 500;
         margin-bottom: 1.5rem;
+
+        @mixin atMedium2 {
+            font-size: 3rem;
+        }
 
         &--white {
             color: #FFF;
@@ -21,11 +30,15 @@
     }
 
     &__text {
-        font-size: 1.6rem;
+        font-size: 1.4rem;
         color: $greyLight;
         line-height: 2rem;
         max-width: 40rem;
         margin: 0 auto;
+
+        @mixin atMedium {
+            font-size: 1.6rem;
+        }
 
         &--white {
             color: #FFF;

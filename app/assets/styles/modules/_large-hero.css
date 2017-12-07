@@ -1,35 +1,77 @@
 .large-hero {
     position: relative;
+    background-color: $mainGrey;
+    padding: 15rem 0;
+
+    @mixin atSmall {
+        padding: 0;
+    }
 
     &__image {
-        display: block;
+        display: none;
+        
+        
+        @mixin atSmall {
+            display: block;
+        }
         
     }
 
     &__box {
-        max-width: 60rem;
+        max-width: 140rem;
         text-align: center;
         position: absolute;
-        top: 45%;
-        left: 50%;
-        transform: translate(-50%,-50%);
+        top: 25%;
         display: inline-block;
+
+        @mixin atSmall {
+            position: absolute;
+            top: 45%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+        }
+
+        @mixin atMedium2 {
+            max-width: 60rem;
+        }
     }
 
     &__title {
-        font-size: 5rem;
+        font-size: 2.7rem;
         color: #Fff;
         text-transform: uppercase;
         font-weight: 900;
         margin-bottom: 1rem;
+        backface-visibility: hidden;
+        animation: moveInLeft 0.5s ease-out;
+
+        @mixin atMedium {
+            font-size: 3.5rem;
+        }
+
+        @mixin atLarge {
+            font-size: 5rem;
+        }
         
     }
 
     &__subtitle {
-        font-size: 2rem;
-        line-height: 3.5rem;
+        font-size: 1.4rem;
+        line-height: 2rem;
         color: #FFF;
-        
+        backface-visibility: hidden;
+        animation: moveInRight 0.5s 0.7s;
+        animation-fill-mode: backwards;
+
+
+        @mixin atMedium {
+            font-size: 1.6rem;
+            line-height: 3.5rem;
+        }
+
+        @mixin atLarge {
+            font-size: 2rem;
+        }
     }
 
     span {

@@ -1,8 +1,13 @@
 .site-header {
-    padding: 4.5rem 0;
+    padding: 2rem 0;
     position: absolute;
     z-index: 2;
     width: 100%;
+
+    @mixin atMedium {
+        padding: 4.5rem 0;
+    }
+
 
     &__logo {
         float: left;
@@ -14,6 +19,12 @@
         float: right;
         font-size: 1.6rem;
         color: #FFF;
+        position: relative;
+        margin-right: 2rem;
+
+        @mixin atMedium2 {
+            margin-right: 0;
+        }
         
     }
 
@@ -21,8 +32,8 @@
         width: 20px;
         height: 20px;
         position: absolute;
-        top: 4.4rem;
-        right: 34rem;
+        top: 0;
+        right: -2.5rem;
         z-index: 10;
         display: inline-block;
         cursor: pointer;
@@ -34,8 +45,6 @@
             top: 0;
             left: 0;
             background-color: #FFF;
-            transform-origin: 0 0;
-            transition: transform 0.3s ease-out;
         }
 
         &__middle {
@@ -45,19 +54,15 @@
             top: 8px;
             left: 0;
             background-color: #FFF;
-            transition: all 0.3s ease-out;
-            transform-origin: 0 50%;
         }
 
-        &__bottom{
+        &__bottom {
             position: absolute;
             width: 20px;
             height: 3px;
             top: 16px;
             left: 0;
             background-color: #FFF;
-            transform-origin: 0 100%;
-            transition: transform 0.3s ease-out;
         }
     }
 

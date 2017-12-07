@@ -1,8 +1,17 @@
 .services {
-    padding: 8rem 0;
+    padding: 5rem 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-direction: column;
+
+    @mixin atSmall {
+        padding: 8rem 0;
+    }
+
+    @mixin atSmall2 {
+        flex-direction: row;
+    }
     
     
     &__item {
@@ -39,7 +48,11 @@
         text-transform: uppercase;
         color: $mainGrey;
         font-size: 1.4rem;
-        margin: 2rem 0;
+        margin: 1rem 0;
+
+        @mixin atSmall {
+            margin: 2rem 0;
+        }
         
     }
 
@@ -48,6 +61,12 @@
         color: $greyLight;
         font-size: 1.3rem;
         line-height: 2rem;
+        margin-bottom: 4rem;
+        
+        @mixin atSmall2 {
+            margin-bottom: 0;
+
+        }
         
     }
 

@@ -1,61 +1,151 @@
 .contact {
     position: relative;
     width: 100%;
+    height: 60vh;
+    
+    background-color: $mainGrey;
 
+    @mixin atMedium {
+        height: auto;
+    }
     
     &__box {
-        @mixin centerAll;
+        padding: 2rem;
+        position: absolute;
+        top: 0;
+        left: 0;
+       
+        width: 100%;
+
+        @mixin atSmall {
+            width: 75%;
+            top: 40%;
+            left: 50%;
+            transform: translate(-50%, -40%);
+            
+        }
+        
+
+        @mixin atMedium2 {
+            width: 70%;
+            padding: 2rem;
+            
+        }
+
+        @mixin atLarge {
+            width: 60%;
+            padding: 0;
+        }
+
+        @mixin atLarge2 {
+            width: 50%;
+            
+        }
+
     }
 
     &__image {
-        display: block;
+        display: none;
 
+        @mixin atMedium {
+            display: block;
+        }
     }
 
+
     &__input {
-        padding: 1rem 1rem;
+        margin: 0 auto;
+        padding: 1rem;
         border-radius: .7rem;
         outline: none;
         border: none;
-        font-size: 1.6rem;
-        width: 40%;
+        font-size: 1.2rem;
+        width: 100%;
         display: inline;
-        margin-bottom: 2rem;
+        margin-bottom: 1rem;
         color: $greyLight;
+        margin-left: 0;
+        
 
-        &:not(:Last-child) {
+        @mixin atMedium {
             margin-left: 5rem;
+            font-size: 1.4rem;
+            margin-bottom: 2rem;
+            width: 40%;
+            padding: .8rem .8rem;
+        }
+
+        @mixin atMedium2 {
+            padding: 1rem 1rem;
+            
+        }
+
+        @mixin atLarge2 {
+            font-size: 1.6rem;
+            width: 40%;
         }
 
     }
 
     &__textarea {
-        padding: 1rem 1rem;
+        padding: .8rem;
         border-radius: .7rem;
-        margin-left: 5rem;
+        margin-left: 0;
         outline: none;
         border: none;
-        font-size: 1.6rem;
-        width: 87%;
-        margin-bottom: 2rem;
+        font-size: 1.2rem;
+        width: 100%;
+        margin-bottom: 1rem;
         color: $greyLight;
+
+        @mixin atMedium {
+            width: 86.6%;
+            font-size: 1.4rem;
+            margin-bottom: 2rem;
+            margin-left: 5rem;
+            padding: .8rem;
+        }
+
+        @mixin atLarge2 {
+            font-size: 1.6rem;
+            padding: 1rem;
+        }
     }
 
     &__icon-list {
         float: right;
         list-style: none;
-        margin-right: 3.5rem;
+        margin-right: 0;
+
+        @mixin atMedium2 {
+            margin-right: 5rem;
+        }
         
     }
 
     &__icon-item {
         display: inline;
+
+        &:not(:Last-child) {
+            margin-right: 0.5rem;
+        }
+
+        @mixin atMedium2 {
+
+            &:not(:Last-child) {
+            margin-right: 1.7rem;
+            }
+        }
+        
     }
 
     &__icon {
-        margin-right: 1.7rem;
-        font-size: 3.5rem;
+        font-size: 3rem;
         transition: all .2s;
+
+        @mixin atMedium2 {
+            font-size: 3.5rem;
+        }
         
         
         &:hover {

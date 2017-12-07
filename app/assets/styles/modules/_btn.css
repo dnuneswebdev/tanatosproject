@@ -1,22 +1,40 @@
 .btn {
     text-decoration: none;
-    
     color: #FFF;
     border: 1px solid $greyLight;
     text-transform: uppercase;
     font-size: 1.4rem;
-    padding: 1rem 5rem;
+    padding: 0.8rem 2rem;
     border-radius: .7rem;
     transition: all .2s;
     display: inline-block;
-    width: auto;
     
+    @mixin atMedium {
+        padding: 1rem 3.5rem;
+    }
+
+    @mixin atLarge {
+        padding: 1rem 5rem;
+    }
 
     &--lh {
-        margin-top: 4rem;
+        animation: moveInBottom 0.5s ease-in 1s;
+        animation-fill-mode: backwards;
+        margin-top: 2rem;
+        display: inline-block;
+
+        @mixin atMedium2 {
+            margin-top: 4rem;
+        }
         
         &:not(:last-child) {
             margin-right: 2rem;
+            width: 33%;
+
+            @mixin atLarge {
+                
+                width: 31%;
+            }
         }
 
         &:hover {
@@ -40,6 +58,19 @@
         outline: none;
         cursor: pointer;
         transition: all .3s;
+        padding: 0.8rem 2rem;
+        display: block;
+        margin: 0 auto;
+        
+
+        @mixin atSmall {
+            padding: 1rem 4rem;
+        }
+
+        @mixin atSmall2 {
+            padding: 1rem 5rem;
+            display: inline;
+        }
 
         &:hover {
             background-color: #ff7327;
@@ -74,9 +105,17 @@
         border: none;
         outline: none;
         cursor: pointer;
-        margin-left: 5rem;
+        margin-left: 0;
 
         transition: all .3s;
+
+        @mixin atSmall {
+            margin-left: 0;
+        }
+
+        @mixin atMedium {
+            margin-left: 5rem;
+        }
 
         &:hover {
             background-color: #ff7327;

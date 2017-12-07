@@ -1,4 +1,6 @@
 import $ from "jquery";
+import smoothScroll from "jquery-smooth-scroll";
+
 
 class Menu {
     constructor() {
@@ -6,7 +8,9 @@ class Menu {
         this.menuIcon = $(".site-header__menu-icon");
         this.menuContent = $(".menu");
         this.closeMenuX = $(".menu__close");
+        this.menuLinks = $(".menu a");
 
+        this.addSmoothScrooling();
         this.events();
     }
 
@@ -15,6 +19,10 @@ class Menu {
         this.closeMenuX.click(this.closeMenu.bind(this));
         $(document).keyup(this.keyPressHandler.bind(this));
         
+    }
+
+    addSmoothScrooling() {
+        this.menuLinks.smoothScroll();
     }
 
     keyPressHandler(e) {
