@@ -55,9 +55,15 @@
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
-        
-        
         background-color: rgba($mainOrange, 0.8);
+
+        @mixin atMedium2 {
+            height: 92%;
+        }
+
+        @mixin atLarge2 {
+            height: 93.2%;
+        }
         
         
         &:hover{
@@ -84,7 +90,6 @@
         width: 100%;
         text-align: center;
         
-        
         @mixin centerAll
 
     }
@@ -93,6 +98,15 @@
         font-size: 2rem;
         text-transform: uppercase;
         margin-bottom: 2rem;
+
+        @mixin atSmall {
+            font-size: 1.4rem;
+        }
+
+
+        @mixin atLarge2 {
+            font-size: 2rem;
+        }
     }
 
     &__img-text {
@@ -102,6 +116,14 @@
         transform: translateY(10px);
         transition: all 0.2s 0.4s;
         opacity: 0;
+
+        @mixin atSmall {
+            font-size: 1.2rem;
+        }
+
+        @mixin atLarge2 {
+            font-size: 1.4rem;
+        }
     }
 }
 

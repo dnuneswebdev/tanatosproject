@@ -29,11 +29,14 @@
         
         &:not(:last-child) {
             margin-right: 2rem;
-            width: 33%;
+            min-width: 12rem;
+
+            @mixin atMedium {
+                min-width: 15rem;
+            }
 
             @mixin atLarge {
-                
-                width: 31%;
+                min-width: 18rem;
             }
         }
 
@@ -95,7 +98,6 @@
         &:hover {
             background-color: $mainOrange;
             border: 1px solid $mainOrange;
-            
             color: #FFF;
         }
     }
@@ -125,14 +127,21 @@
 
     &--img {
         background-color: #FFF;
-        color: $mainOrange;
         outline: none;
         border: none;
         visibility: hidden;
-        
         transform: translateY(20px);
         transition: all 0.2s 0.7s;
         opacity: 0;
+        color: $mainOrange;
+
+        @mixin atMedium2 {
+            padding: 0.5rem 1.2rem;
+        }
+
+        @mixin atLarge2 {
+            padding: 1rem 5rem;
+        }
     }
 
     &--form-modal {
