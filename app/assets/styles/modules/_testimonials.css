@@ -9,7 +9,7 @@
     color: #FFF;
 
     @mixin atSmall2 {
-        background-image: url('/assets/images/testimonials-large-image.jpg');
+        background-image: url('../images/testimonials-large-image.jpg');
         background-size: cover;
         background-repeat: no-repeat;
         padding: 6.3rem 0;

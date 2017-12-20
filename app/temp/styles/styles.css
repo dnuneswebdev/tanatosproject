@@ -1229,7 +1229,7 @@ img {
 @media (min-width: 621px) {
 
 .newsletter {
-        background-image: url('/assets/images/newsletter-image-large.jpg');
+        background-image: url('../images/newsletter-image-large.jpg');
         background-size: cover;
         background-repeat: no-repeat
 
@@ -1364,7 +1364,7 @@ img {
 @media (min-width: 621px) {
 
 .testimonials {
-        background-image: url('/assets/images/testimonials-large-image.jpg');
+        background-image: url('../images/testimonials-large-image.jpg');
         background-size: cover;
         background-repeat: no-repeat;
         padding: 6.3rem 0

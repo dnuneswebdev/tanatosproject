@@ -6,7 +6,7 @@
     background-color: $mainGrey;
 
     @mixin atSmall2 {
-        background-image: url('/assets/images/newsletter-image-large.jpg');
+        background-image: url('../images/newsletter-image-large.jpg');
         background-size: cover;
         background-repeat: no-repeat;
     }
